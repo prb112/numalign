@@ -9,7 +9,7 @@ export GO111MODULE=on
 export GOPROXY=off
 export GOFLAGS=-mod=vendor
 export GOOS=linux
-export GOARCH=amd64
+export GOARCH=amd64,ppc64le
 export CGO_ENABLED=0
 
 if [ -n "${TAG}" ]; then
