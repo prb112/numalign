@@ -25,6 +25,7 @@ for name in $( ls "${BASEDIR}/cmd/" ); do
 	go build -v -o "${BASEDIR}/_output/${name}${suffix}" "${path}"
 	
 	# PowerPC Build
+	suffix="-linux-ppc64le"
 	if [ -n "${TAG}" ]; then
 		suffix="-v${TAG}-linux-ppc64le"
 	fi
